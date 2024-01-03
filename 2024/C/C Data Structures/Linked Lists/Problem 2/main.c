@@ -1,7 +1,7 @@
 // Do not modify code in this file. Go to linkedList.c
 
 #include <stdio.h>
-#include "linkedList.h"
+#include "linkedlist.h"
 
 int main() {
     struct LinkedList linkedList;
