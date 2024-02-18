@@ -1,0 +1,9 @@
+#ifndef TEACHER_CERTIFICATION_COURSE_NODE_H
+#define TEACHER_CERTIFICATION_COURSE_NODE_H
+
+struct Node{
+    int value;
+    Node* next;
+};
+
+#endif //TEACHER_CERTIFICATION_COURSE_NODE_H
