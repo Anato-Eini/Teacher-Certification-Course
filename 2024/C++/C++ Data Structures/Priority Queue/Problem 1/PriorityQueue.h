@@ -2,14 +2,16 @@
 #define TEACHER_CERTIFICATION_COURSE_PRIORITYQUEUE_H
 
 #include <vector>
-
+#include <iostream>
 using namespace std;
 class PriorityQueue {
-    vector<int> arr;
+    vector<pair<int, int>> arr; // priority-element
+    void heapify(int, int);
 public:
     PriorityQueue() = default;
     void enqueue(pair<int, int>&);
     pair<int, int> dequeue();
+    void print();
 };
 
 
