@@ -9,9 +9,11 @@ class PriorityQueue {
     void heapify(int, int);
 public:
     PriorityQueue() = default;
+    [[nodiscard]] bool isPresent(int);
     void enqueue(pair<int, int>&);
     pair<int, int> dequeue();
     void print();
+
 };
 
 

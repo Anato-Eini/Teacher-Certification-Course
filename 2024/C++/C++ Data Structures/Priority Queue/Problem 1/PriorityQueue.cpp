@@ -1,3 +1,4 @@
+#include <algorithm>
 #include "PriorityQueue.h"
 
 void PriorityQueue::enqueue(pair<int, int> &pairValue) {
@@ -37,3 +38,9 @@ void PriorityQueue::print() {
         cout << "Element: "<< p.second << ", Priority: " << p.first << '\n';
 }
 
+bool PriorityQueue::isPresent(int element) {
+    auto isEqual = [element](const auto& p) {
+        return p.second == element;
+    };
+    return ranges::any_of(arr, isEqual);
+}
