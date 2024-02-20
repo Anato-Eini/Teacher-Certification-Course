@@ -1,4 +1,4 @@
-#include "PriorityQueue.h"
+#include "../PriorityQueue.h"
 int main(){
     auto* priorityQueue = new PriorityQueue();
     cout << "Options:\n"
